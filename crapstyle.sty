@@ -1,0 +1,86 @@
+% Ce style correspond aux spécifications pour le mémoire de M2 donné par F.
+% Laurent.
+
+\usepackage{lipsum}
+\usepackage{microtype}
+\usepackage{todonotes}
+\usepackage{csquotes}
+\usepackage{textcomp} 
+\usepackage{color}
+\usepackage{titlesec}
+
+%\usepackage{avant} % Zoulie sans serif, mais pas assez arial
+% Arial-like font
+\usepackage[scaled]{helvet}
+%\usepackage{fontspec}
+%  \setmainfont[Mapping=tex-text]{Helvetica}
+%\usepackage[scaled]{uarial}
+\renewcommand*\familydefault{\sfdefault} %% On veut du sans serif (avec helvetica, si on ne se met pas en sans serif, on tombe avec la police Computer Modern)
+
+% Nécessaire pour les accents et autres ç
+\usepackage[T1]{fontenc}
+\usepackage{textcomp} % 
+%\usepackage[utf8]{inputenc} % Je sais pas pourquoi, mais ça il faut pas le mettre. (Ça doit avoir un rapport avec LuaLaTeX)
+
+% Interigne = 1.5
+% Note : \linespread est spécifique de KOMA-script
+\linespread{1.5}
+\usepackage[none]{hyphenat}
+
+% Les marges à 2.5 (y compris le haut et le bas, vu que c'est pas précisé)
+\usepackage[%
+	a4paper,
+	left=2.5cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm
+	]{geometry}
+
+% Graphicx pour les figures, un classique...
+\usepackage{graphicx}
+
+% Métadonnées du PDF (Pas indispensable, mais plus propre)
+\usepackage[%
+    hidelinks=true
+    colorlinks=false
+    pdfauthor={François Chaix},
+    pdftitle={Mémoire biblio François Chaix 2013},
+    pdfdisplaydoctitle=true, % Display document title instead of filename in title bar
+    pdfsubject={Réponses de l'insecte aux stress thermiques et rôle de la communauté symbiotique bactérienne},
+    pdfkeywords={insecte HSP stress microbiote},
+    pdfproducer={LuaTeX, avec le package hyperref},
+    pdfcreator={LuaTex},
+    linktocpage=false,
+    pdfinfo={N'a de convictions que celui qui n'a rien approfondi. - Emil Michel Cioran},
+    pdflang={fr-FR},
+    unicode=true,
+    verbose=true
+    ]{hyperref}
+
+% Load journal abbreviations (Ça fait une erreur de compilo, je sais pas pourquoi.)
+%\DeclareSourcemap{
+%    \maps[datatype=bibtex,overwrite=true]{
+%    \input{JourAbs.map}
+%    }
+%}
+
+\titlespacing{\section}{0pt}{50pt}{0pt}
+
+\setcounter{tocdepth}{10}
+
+\usepackage[
+    %style=none,
+    natbib=true,
+    backend=biber
+]{biblatex}
+
+% Francisation des noms de chapitre/partie, typographie francaise...
+\usepackage[frenchb]{babel}
+
+\author{François \textsc{Chaix}}
+
+%%%%%%% Fonctions persos
+\newcommand{\esp}[1]{\textit{#1}} % Commande pour stocker les noms d'espèces.
+\newcommand{\espsp}[1]{\textit{#1} sp.} % Commande pour stocker les noms d'espèces indéterminées
+\newcommand{\gene}[1]{\textit{#1}} % Commande pour stocker les noms de gènes.
+
