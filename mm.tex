@@ -44,17 +44,36 @@ Les œufs pondus ont été récupérés régulièrement puis mis à éclore.
 
 \subsection{Électrotransformation}
 
+L'expérience d'éléctrotransformation s'est déroulée en deux temps : la bactérie doit tout d'abord être rendue compétente.
+Pour cela, après une pré-culture pendant la nuit, la cinétique de croissance de la bactérie est élablie par mesure de densité optique (DO) à intervalle régulier.
+Une fois cette cinétique déterminée, la culture est arrêtée en phase exponentielle de croissance, à une DO située entre 0,4 et 0,6.
+Les bactéries subissent ensuite un choc thermique (incubation 15 minutes sur de la glace, puis lavage des cellules avec du tampon à 4°C), les rendant compétantes à la tranformation.
+Les cellules compétentes sont ensuite concervées dans du glycérol.
+Enfin, ces cellules sont soumises à un choc éléctrique dans l'éléctroporateur (Electroporator 2510), en présence de 75\,ng d'ADN plasmidique (le plasmide pHM2-GFP est au préalable extrait grâce au kit QIAprep Spin Miniprep Kit, Qiagen).
 
+Les cellules sont enfin mises en culture sur milieu de culture solide LBM, en présence de kanamycine, pour maintenir une pression de séléction en faveur des cellules transformantes, et d'IPTG pour induire l'expression de GFP.
 
 \subsection{Vérifications post-transformation}
 
-\paragraph{PCRs}
-\paragraph{Profil plasmidique}
-\paragraph{Repiquages successifs}
-\paragraph{Observation au microscope à épifluorescence}
+\subsubsection{PCRs}
+La présence des plasmides dans les colonies hypothétiquement transformantes est vérifiée par PCR sur le gène de la GFP, avec les amorces PnptII1F-Not et TendR-Not (taille de fragment attendue : 1.1kb), et sur les gènes de résistance à la kanamycine et \textit{LacZ} avec les amorces LacR et KanF (taille attendue : 2kb).
 
+\paragraph{Profil plasmidique}
+La présence des plasmides est aussi testée en effectuant un profil plasmidique, qui consiste à extraire les plasmides des colonies via un protocole d'isolement des petits plasmides, puis de faire migrer l'ADN obtenu dans un gel d'agarose à 0.8\,\% pendant 24h.
+
+\paragraph{Observation au microscope à épifluorescence}
+Le phénotype induit par l'expression de GFP en présence de l'inducteur IPTG est vérifié par l'observation de colonies fraiches (mises en culture la veille et incubées sur milieu LBM solide en présence d'IPTG et de kanamycine) en microscopie à épifluorescence.
+En présence de lumière de longueur d'onde de 475\,nm, les bactéries fluorescent en vert (foir figure).
 
 \section{Infection par \textit{A. calcoaceticus}-GFP}
+
+\subsection{Description des conditions}
+
+Les moustiques seront séparés en cinq modalités, notés de C0 à C4.
+La condition C0 est composée de moustiques dits <<sauvages>>, c'est-à-dire n'ayant subi aucun traitement.
+La condition C1 est composée de moustiques ayant subi un traitement antibiotique comme décrit dans la section 2.4.2, puis infectés par la souche d'\textit{A. calcoaceticus} marquée à la GFP, comme décrit dans la partie 2.4.3.
+La condition C2 est composée de moustiques ayant subi un traitement antibiotique comme décrit dan la section 2.4.2, sans infection avec la bactérie, mais recevant le même traitement antibiotique que la condition C1 au moment de l'infection de celle-ci (voir section 2.4.2).
+La condition C3 est composée de moustiques n'ayant pas subi de traitement antibiotique avant l'infection, puis infectés par la souche d'\textit{A. calcoaceticus} marquée à la GFP, comme décrit dans la partie 2.4.3.
 
 \subsection{Traitement antibiotique des moustiques}
 
@@ -62,9 +81,11 @@ Les œufs pondus ont été récupérés régulièrement puis mis à éclore.
 
 \subsubsection{Application du traitement}
 
+\subsection{Infection des moustiques par la bactérie marquée}
+
 \subsection{Conception et mise en \oe{}uvre des expériences de mesure de traits d'histoire de vie}
 
-En se basant sur les conseils de l'entomologiste \textsc{Raharimalala} Fara Nantenaina et les documents délivrés par l'ECDC\footnote{European Center for Disease Prevention and Control} \cite{ecdc}, nous avons planifié de mesurer divers traits d'histoire de vie\footnote{L'histoire de vie est la distribution des évènements importants au cours de la vie d'un individu qui contribuent directement à la production et à la survie des descendants. Elle est donc une notion centrale en biologie évolutive} comme suit :
+% En se basant sur les conseils de l'entomologiste \textsc{Raharimalala} Fara Nantenaina et les documents délivrés par l'ECDC\footnote{European Center for Disease Prevention and Control} \cite{ecdc}, nous avons planifié de mesurer divers traits d'histoire de vie\footnote{L'histoire de vie est la distribution des évènements importants au cours de la vie d'un individu qui contribuent directement à la production et à la survie des descendants. Elle est donc une notion centrale en biologie évolutive} comme suit :
 
 \paragraph{Survie des adultes.} Ce trait est mesuré sur des moustiques du même âge (±\,2 jours), isolés dans des petites cages (17.5\,×\,17,5\,×\,17.5\,cm). La date et le sexe des morts seront notés au fur et à mesure du déroulement de l'expérience, et stockés dans une base de données pour des analyses statistiques ultérieures.
 En raison de la forte mortalité subie par les moustiques ayant subi le traitement antibiotique (voir section 2.4), et du faible nmbre d'individus adultes qui en résulte, il n'a pas été possible d'isoler des cages de 30 individus de ces conditions.
