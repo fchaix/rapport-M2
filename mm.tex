@@ -52,25 +52,44 @@ L’isolat d’\textit{A. calcoaceticus} conservé en glycérol à -80°C a ét�
 Une pré-culture a été réalisée en inoculant 5\,ml de milieu LBm liquide par une colonie unique.
 Après incubation pendant 12\,h à 30°C sous agitation, la pré-culture a été inoculée à 2×25\,ml de milieu LBm et la culture incubée à 30°C.
 À intervalle de temps régulier, une mesure de densité optique a été réalisée au spectrophotomètre Safas® UV-mc\textsuperscript{2} jusqu’à atteindre une DO\textsubscript{600\,nm} comprise entre 0,4 et 0,6.
-Parallèlement, un dénombrement par étalement sur géloses LBm de 100µl des dilutions XXX à XXX de la culture à la DO choisie a été effectué afin d’évaluer a posteriori le nombre de bactéries transformées. Pour les rendre compétentes à la transformation, les cellules ont ensuite subi un choc thermique de 15 min dans la glace puis centrifugées 10 min à 6000 rpm à 4°C. 
+Parallèlement, un dénombrement par étalement sur géloses LBm de 100\,µl des dilutions 10\textsuperscript{5} à 10\textsuperscript{8} de la culture à la DO choisie a été effectué afin d’évaluer \textit{a posteriori} le nombre de bactéries compétentes.
+Pour les rendre compétentes à la transformation, les cellules ont ensuite subi un choc thermique de 15 min dans la glace puis centrifugées 10 min à 6000 rpm à 4°C. 
+Les culots ont été rincés à deux reprises dans 25\,ml d'eau puis repris dans 200\,µL final de glycérol 10\,\% froid.
+Les cellules ont été conservées à -80°C à raison de 50\,µl de cellules compétentes par tube.
 
-Les cellules sont enfin mises en culture sur milieu de culture solide LBM, en présence de kanamycine, pour maintenir une pression de séléction en faveur des cellules transformantes, et d'IPTG pour induire l'expression de GFP.
+50\,µl de cellules compétentes (10\textsuperscript{12}\,CFU/ml) sont ensuite placées dans une cuve d'éléctroporation de 0,2\,cm de diamètre, puis soumises à un choc éléctrique de 2\,500\,V dans l’éléctroporateur (Electroporator 2510) en présence de 75ng d’ADN plasmidique.
+Les cellules sont ensuite incubées à 30°C pendant 4h, pour que le plasmide puisse exprimer les gènes de résistance en vue de la séléction.
 
-\subsection{Vérifications post-transformation}
+Enfin, les transformants ont été sélectionnés par culture sur géloses LBM, en présence de 50\,µg/ml de kanamycine et 0,5\,mM d’IPTG pour les cellules transformées avec pXDC116, ou 100\,µg/ml de kanamycine et la même quantité d'IPTG pour les cellules transformées avec pHM2-GFP.
 
-\subsubsection{PCRs}
-La présence des plasmides dans les colonies hypothétiquement transformantes est vérifiée par PCR sur le gène de la GFP, avec les amorces PnptII1F-Not et TendR-Not (taille de fragment attendue : 1.1kb), et sur les gènes de résistance à la kanamycine et \textit{LacZ} avec les amorces LacR et KanF (taille attendue : 2kb).
+\subsection{Analyse des transformants}
 
-\subsubsection{Profil plasmidique}
-La présence des plasmides est aussi testée en effectuant un profil plasmidique, qui consiste à extraire les plasmides des colonies via un protocole d'isolement des petits plasmides, puis de faire migrer l'ADN obtenu dans un gel d'agarose à 0.8\,\% pendant 24h.
+Différentes méthodes ont été utilisées pour vérifier la nature des colonies obtenues après transformation~:
+\paragraph{Une PCR sur colonie sur le gène marqueur de la GFP.}
+L’amplification a été réalisée dans un volume final de 25µl comprenant les amorces spécifiques PnptII1F-Not et TendR-Not (voir tableau)
+(g-ne \textit{GFP}, taille attendue 1.1\,kb) ou LacR et KanF (plasmide pHM2, taille attendue 2\,kb) à une concentration de 0,\,μM avec 0,04\,µM de dNTPS (Invitrogen, France), 0,02\,U de Taq polymérase (Invitrogen, France), 1,63\,mM MgCl\textsubscript{2} dans un tampon 1X (Invitrogen, France).
+La PCR a été réalisée selon le programme suivant: 3\,min de dénaturation à 95°C, 35 cycles d’amplification de 1\ min 95°C, 1\,min 60°C, 2\,min 72°C, suivie d’une élongation finale de 10 min à 72°C.
+L’ensemble des PCR a été effectué dans le thermocycleur T1-thermobloc (Biometra, France).
+L’ADN obtenu à partir de l’extraction plasmidique a servi de témoin positif.
 
-\subsubsection{Observation au microscope à épifluorescence}
-Le phénotype induit par l'expression de GFP en présence de l'inducteur IPTG est vérifié par l'observation de colonies fraiches (mises en culture la veille et incubées sur milieu LBM solide en présence d'IPTG et de kanamycine) en microscopie à épifluorescence.
-En présence de lumière de longueur d'onde de 475\,nm, les bactéries fluorescent en vert (foir figure).
+\paragraph{Un profil plasmidique.}
+Parallellement à l'analyse par PCR, la présence des plasmides a été vérifiée par une méthode de profl plasmidique mise au point par \textcite{seifert1994}, déjà éprouvée sur les isolats d'\textit{Acinetobacter} sp. provenant du moustique par \textcite{minard2013}.
+Cette méthode consiste à comparer le profil de migration (nombre et taille) des plasmides extraits des isolats obtenus lors de l'électrotransformation, avec les témoins suivants~: Le témoin positif est le plasmide pur utilisé pour l'électro-transformation, et le témoin négatif est constitué par la souche d'\textit{Acinetobacter calcoaceticus} utilisé dans l'éléctro-transformation, mais n'ayant pas subi celle-ci.
+
+Pour cela, les souches ont été isolées sur milieu LBm solide puis mises à incubation à 30°C pendant 24\,h.
+Un quart des colonies obtenues sont inoculées dans 1\,ml de tampon (2,5\,M NaCl; 10\,mM EDTA), puis centrifugées à 13,2\,rpm.
+Le culot ainsi obtenu est ensuite lysé d'abord par l'action d'un lysozyme (1,8\,mg/ml), puis par lyse chimique avec le détergent triton.
+Le lysat ainsi obtenu est ensuite centrifugé à 33\,000\,g (ultracentrifugeuse Note : Aller chercher référence), puis lavé avec du tampon CTAB.
+Enfin, les protéines sont extraites avec un mélange de phénol, chlorophorme, et alcool isoamylique (25:24:1), et l'ADN précipité à l'isopropanol, centrifugé puis repris dans de l'eau distillée.
+
+Enfin, les échantillons sont migrés dans du gel d'agarose à 0,8\,\%, puis révélés par un bain de bromure d'éthidium.
+
+\paragraph{Observation au microscope à fluorescence}
+Le phénotype induit par l’expression de GFP en présence de l’inducteur IPTG est vérifié par observation des colonies au microscope à épifluorescence (AxioImager Z1). En présence de lumière de longueur d’onde de 475\,nm, les bactéries fluorescent en vert.
 
 \section{Infection par \textit{A. calcoaceticus}-GFP}
 
-\subsection{Description des conditions}
+\subsection{Description des modalités d'étude}
 
 Les moustiques seront séparés en cinq modalités, notés de C0 à C4.
 La condition C0 est composée de moustiques dits <<sauvages>>, c'est-à-dire n'ayant subi aucun traitement.
