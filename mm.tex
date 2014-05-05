@@ -112,38 +112,28 @@ Une DO\textsuperscript{600} suppérieure à 0,60 après cette incuvation est syn
 
 \subsubsection{Modalité d’application du traitement antibiotique sur les moustiques}
 
-Le premier traitement antibiotique sur la génération 32 est effectuée en prennant en compte le fait que la concentration en cellules bactériennes est beaucoup moins importante dans le moustique (env 10⁴ cellules par moustique (source)), par rapport à celle utilisée pour faire le test décrit plus haut (de l'ordre de 10⁸ UFC/ml), et que le moustique absorbe en moyenne 2\,µl de jus sucré lors d'un repas sucré.
-La concentration choisie pour ce premier traitement est donc de 0.05\,µg/µl de gentamycine, 0.25\,µg/µl de streptomycine et 0.15\,µg/µl de péniciline, administré dans le repas sucré des adultes G32.
+Le traitement antibiotique a été appliqué sur des moustiques adultes de la G32 ainsi que sur des larves de la G33.
 
-Suite à ce traitement, la présence d'\textit{Acinetobacter} est vérifiée par PCR nichée (voir partie 2.5).
-Ce traitement ne semblant pas efficace au vu de ce test (voir partie résultats), un autre traitement est effectué sur les larves de la génération suivante.
+Pour déterminer les concentrations optimales d’antibiotiques à administrer aux moustiques adultes, deux critères d’évaluation ont été pris en compte :
+(i) la densité bactérienne présente dans un moustique (~10⁴ cellules selon source\footnote{Note temp : Trouver une source pour ça.
+On a décidé de cette valeur lors d'une discussion avec Patrick, mais ona  jamais vraiment sourcé cela}) est inférieure d’un facteur 10\textsuperscript{4} à la concentration utilisée lors des tests antibiogrammes réalisés précédemment (~10\textsuperscript{8} UFC/ml), et (ii) la quantité de jus sucré consommée par un moustique est de l’ordre de 2µl.
+Compte tenu de ces observations, nous avons choisi d’appliquer un traitement 10\,000 fois moins concentré de chaque antibiotique aux moustiques, Les antibiotiques ont été administrés lors du repas sucré, pendant 3 jours consécutifs. 
 
-Le traitement des larves se déroule sur le stade L4, à savoir le dernier stade avant la métamorphose en nymphe, sui émergera ensuite en adulte.
-Les larves sont regroupées par lots de 30 individus dans des tubes Falcon de 50\,ml, dans 30\,ml de solution d'eau autoclavée et d'antibiotiques (gentamycine : 15\,µg/ml; péniciline/streptomycine respectivement 10 unités et 10\,µg/ml).
-Ces tubes sont laissés ouverts dans des cages lavées à l'alcool, pour permettre l'émergence des adultes.
-L'efficacité du traitement est aussi vérifié par PCR nichée (voir partie 2.5).
+Le traitement antibiotique des larves a été réalisé sur les stades L4.
+Pour cela, des lots de 30 individus ont été constitués dans des tubes Falcon de 50\,ml contenant 30\,ml d’eau déchlorée autoclavée supplémentée avec la solution d’antibiotiques précédemment déterminée mais concentrée 100\,000 fois, comme utilisées dans ce précédentes études \cite{dong2009}.
+Les tubes ont été positionnés dans des cages préalablement nettoyés à l’alcool pour permettre l’émergence des adultes.
 
+\subsubsection{Amplification PCR nichée \textit{Acinetobacter} sp.}
 
-\subsection{Infection des moustiques par la bactérie marquée}
+L’efficacité des traitements antibiotiques a été vérifiée par PCR nichée.
+Au préalable, l’ADN des moustiques a été extrait selon le protocole décrit dans Zouache et al, 2009.
+%Brièvement, donne les grandes lignes/étapes du protocole.
 
-Les modalités d'infection des moustiques sont inspirées des travaux de \textcite{bahia2014}.
-La bactérie, après une pré-culture de 14\,h puis un lavage dans une solution de NaCl à 0.8\,\%, est incorporée au repas sucré des cages correspondant aux modalités infectées, accompagné de kanamycine afin de fournir une pression de séléction en faveur de la souche comportant le plasmice comportant le gène de résistance à la kanamycine.
-La solution nutritive donnée à ces adultes sera donc composée de 10⁸\,UFC d'\textit{Acinetobacter}-GFP, 100\,µg/ml de kanamycine et 8\,\% de saccharose.
+La 1ère amplification ciblant le gène codant la sous-unité ribosomique 16S des eubactéries a été réalisée en utilisant 30\,ng d’ADN matrice et les amorces généralistes pA et pH (Tableau XXX).
+La réaction a été réalisée dans un volume final de 25\,µl contenant 20\,nM de chaque amorce, 40\,µM de dNTPs (Invitrogen), 0,03\,U de polymérase Expand, 1.5\,mM de MgCl\textsubscript{2} (Roche, Suise), 25\,µg/ml de protéine T4/32 (Roche, Suise), dans 1X de tampon de réaction (Invitrogen, France).
+Le programme de PCR, effectué dans le thermocycleur T1-thermobloc (Biometra, France), débute par une dénaturation de 3\,min à 95°C suivie de 35 cycles comprenant 30\,sec à 94°C, 40\,sec à 55°C et 1\,min 30\,sec à 72°C, puis une élongation finale de 10min à 72°C.
 
-Des témoins, comme décrit dans la partie 2.4.1, seront nouris de solutions ne comportant soit que la bactérie, soit que la kanamycine.
-
-\subsection{Conception et mise en \oe{}uvre des expériences de mesure de traits d'histoire de vie}
-
-% En se basant sur les conseils de l'entomologiste \textsc{Raharimalala} Fara Nantenaina et les documents délivrés par l'ECDC\footnote{European Center for Disease Prevention and Control} \cite{ecdc}, nous avons planifié de mesurer divers traits d'histoire de vie\footnote{L'histoire de vie est la distribution des évènements importants au cours de la vie d'un individu qui contribuent directement à la production et à la survie des descendants. Elle est donc une notion centrale en biologie évolutive} comme suit :
-
-\paragraph{Survie des adultes.} Ce trait est mesuré sur des moustiques du même âge (±\,2 jours), isolés dans des petites cages (17.5\,×\,17,5\,×\,17.5\,cm). La date et le sexe des morts seront notés au fur et à mesure du déroulement de l'expérience, et stockés dans une base de données pour des analyses statistiques ultérieures.
-En raison de la forte mortalité subie par les moustiques ayant subi le traitement antibiotique (voir section 2.4), et du faible nmbre d'individus adultes qui en résulte, il n'a pas été possible d'isoler des cages de 30 individus de ces conditions.
-Ce suivi n'a pu être effectué que sur les individus témoins.
-
-\paragraph{Taille de la ponte.} Ce trait est mesuré en isolant des femelles juste après leur premier gorgement, dans des tubes Falcon de 50\,ml préparés pour la ponte (figure 3A). Le nombre d'\oe{}ufs par femelle est compté 4 jours après l'isolement.
-Un autre trait, la \textbf{fécondité}, est mesuré à partir de ces \oe{}fs. Il s'agit du rapport [Nombre d'\oe{}ufs par femelle/Nombre de larves], déterminé suite au dénombrement des larves une semaine après le comptage des \oe{}ufs.
-
-\paragraph{Durée du cycle gonotrophique.} Il s'agit du temps séparant le premier gorgement et la première ponte d'une femelle. Ce trait est mesuré sur les femelles isolées du paragraphe précédent. La présence ou non d'\oe{}ufs est vérifiée chaque jour qui suit le gorgement.
+La seconde PCR ciblant une région spécifique du gène 16S d’\textit{Acinetobacter} a été réalisée en utilisant 1µl du produit PCR 16S généraliste dans un volume final de 25µl comprenant les amorces spécifiques du genre Acinetobacter~: Ac et Acin1 (Tableau XXX). Les amorces ont été utilisées à une concentration de 0,2µM avec 40µM de dNTPs (Invitrogen, France), 0,5U de Taq polymérase (Invitrogen, France), 2mM de MgCl2, dans un tampon 1X (Invitrogen, France). La réaction a été réalisée selon le programme suivant : 5min de dénaturation à 95°C, 35 cycles d’amplification de 1min à 94°C, 1min à 58°C, 1 minute à 72°C, suivie d’une élongation finale de 10min à 72°C, dans le thermocycleur C1000 Thermal Cycler (Biorad, France).
 
 \section{Suivi post-infection de \textit{Acinetobacter calcoaceticus}}
 
